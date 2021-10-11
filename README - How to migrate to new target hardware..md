@@ -2,11 +2,11 @@
 
 * ThreeButtons-Game Software Architecture
 
-   ThreeButtons.cpp     |  Main Loop
-------------------------|-----------------------------------
-   Game.cpp             |  Game Engine Core
-------------------------|-----------------------------------
-   ConsoleDisplay.cpp   |  Hardware Abstraction Layer (HAL)
+|   Module                | Description                         |
+|:------------------------|:-----------------------------------:|
+|   ThreeButtons.cpp      |  Main Loop                          |
+|   Game.cpp              |  Game Engine Core                   |
+|   ConsoleDisplay.cpp    |  Hardware Abstraction Layer (HAL)   |
 
 1) Define target hardware name and set compile option in __makefile__.
 ```
