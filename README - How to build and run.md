@@ -45,27 +45,3 @@ And just run:
 ```
 $ ./ThreeButtons
 ```
-### 2. How to build and run ThreeButtons-Game __unit tests__
-1) Framework-less Unit Tests
-Go to the ThreeButtons-Game project root directory and change director to ThreeButtons-test:
-```
-$ cd /path/to/your/Mars-Rover/dir
-$ cd ThreeButtons-test
-```
-Build and run:
-```
-$ make clean && make
-$ ./ThreeButtons_test
-```
-2) Unit Tests using Boost.Test
-__Please make sure you already installed boost framework.__
-Go to the ThreeButtons-Game project root directory and change director to ThreeButtons-test:
-```
-$ cd /path/to/your/Mars-Rover/dir
-$ cd ThreeButtons-test-boost
-```
-Build and run:
-```
-$ make clean && make
-$ ./ThreeButtons_test_boost
-```
