@@ -64,11 +64,53 @@ $ ./ThreeButtons_test
 * Input : user_guess = "ABH" and increase value of guess by 0x01, running the the loop 3 times.
 * Expected output: correct_guesses != num_of_buttons
 
-- Check "Passed" message with test case number.
+__Check "Passed" message with test case number.__
 
 #### 2) Test results
 ```
-
+$ ./ThreeButtons_test
+===================================================
+0.Test Case - Game Class Initializing 
+---------------------------------------------------
+BAC
+===================================================
+1.Test Case - LED_GREEN and LED_ORANGE 
+---------------------------------------------------
+LED1:Green LED2:Orange LED3:Orange 
+LED1:Orange LED2:Green LED3:Orange 
+LED1:Orange LED2:Orange LED3:Green 
+===================================================
+2.Test Case - LED_RED 
+---------------------------------------------------
+LED1:Red LED2:Red LED3:Red 
+LED1:Red LED2:Red LED3:Red 
+===================================================
+3.Test Case - checkUserGuess - 1
+---------------------------------------------------
+LED1:Orange LED2:Green LED3:Orange 
+LED1:Green LED2:Green LED3:Orange 
+LED1:Green LED2:Green LED3:Green 
+===================================================
+4.Test Case - checkUserGuess - 2
+---------------------------------------------------
+LED1:Orange LED2:Orange LED3:Green 
+LED1:Green LED2:Orange LED3:Green 
+LED1:Green LED2:Green LED3:Green 
+===================================================
+5.Test Case - wrong inputs - 1
+---------------------------------------------------
+LED1:Red LED2:Red LED3:Red 
+LED1:Red LED2:Red LED3:Red 
+LED1:Red LED2:Red LED3:Red 
+===================================================
+6.Test Case - wrong inputs - 2
+---------------------------------------------------
+LED1:Orange LED2:Orange LED3:Red 
+LED1:Green LED2:Orange LED3:Red 
+LED1:Green LED2:Red LED3:Red 
+===================================================
+ Passed 7 tests!!!
+===================================================
 ```
 
 ### 2. Framework Unit Tests using Boost.Test
@@ -100,7 +142,8 @@ $ ./ThreeButtons_test_boost
 * Input : new Game();
 * Expected output: "AAA" >= and <= "CCC"
 
-2. LED_test: LED_GREEN and LED_ORANGE Test<br>
+2. LED_test
+2.1. LED_GREEN and LED_ORANGE Test<br>
 ; Check returned color values for green and orange LED
 - Set generated sequence as "ABC"
 * Input : user_guess = "AAA"
@@ -112,7 +155,7 @@ $ ./ThreeButtons_test_boost
 * Input : user_guess = "CCC"
 * Expected output: LED_ORANGE, LED_ORANGE, LED_GREEN
 
-3. LED_test: LED_RED Test<br>
+2.2. LED_RED Test<br>
 ; Check returned color values for red LED
 - Set generated sequence as "AAA"
 * Input : user_guess = "BBB"
@@ -120,31 +163,38 @@ $ ./ThreeButtons_test_boost
 * Input : user_guess = "CCC"
 * Expected output: LED_RED, LED_RED, LED_RED
 
-4. checkUserGuess_test: checkUserGuess Test-1<br>
+3. checkUserGuess_test
+3.1. checkUserGuess Test-1<br>
 ; Check checkUserGuess() operation
 - Generate random sequence
 * Input : user_guess = "AAA" and change value of guess with LED_RED or LED_GREEN, running the the loop 3 times.
 * Expected output: correct_guesses == num_of_buttons, user_guess == random generated sequence
 
-5. checkUserGuess_test: checkUserGuess Test-2<br>
+3.2. checkUserGuess Test-2<br>
 ; Check checkUserGuess() operation one more time with different input
 - Generate random sequence
 * Input : user_guess = "ABC" and change value of guess with LED_RED or LED_GREEN, running the the loop 3 times.
 * Expected output: correct_guesses == num_of_buttons, user_guess == random generated sequence
 
-6. checkUserGuess_wrong_input_test: Wrong input Test-1<br>
+4. checkUserGuess_wrong_input_test
+4.1. Wrong input Test-1<br>
 ; Check checkUserGuess() handles wrong inputs properly
 - Generate random sequence
 * Input : user_guess = "DDD" and increase value of guess by 0x01, running the the loop 3 times.
 * Expected output: correct_guesses != num_of_buttons
 
-7. checkUserGuess_wrong_input_test: Wrong input Test-2<br>
+4.2. Wrong input Test-2<br>
 ; Check checkUserGuess() handles wrong inputs properly
 - Generate random sequence
 * Input : user_guess = "ABH" and increase value of guess by 0x01, running the the loop 3 times.
 * Expected output: correct_guesses != num_of_buttons
 
-8. Check .
-
+__Check "*** No errors detected"__
 
 #### 2) Test results
+```
+$ ./ThreeButtons_test_boost 
+Running 4 test cases...
+
+*** No errors detected
+```
