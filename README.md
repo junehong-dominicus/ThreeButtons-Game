@@ -28,7 +28,6 @@ Design & Implement software that fulfills these requirements:
 
   To be written in C++ and executed on Linux.
 
-  The application should be designed to run on the Linux console but with the plan to migrate to some as yet undetermined
-  target hardware.
+  The application should be designed to run on the Linux console but with the plan to migrate to some as yet undetermined target hardware.
 
 Provide your test plan and test results as part of your submission.
