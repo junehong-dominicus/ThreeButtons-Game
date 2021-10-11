@@ -23,7 +23,7 @@ OBJS = ThreeButtons_test_boost.o Game.o ConsoleDisplay.o
 $(PROG) : $(OBJS)
 		$(CC) $(LDFLAGS) -o $(PROG) $(OBJS)
 
-ThreeButtons_test-boost.o :
+ThreeButtons_test_boost.o :
 		$(CC) $(CFLAGS) $(COMPILE_OPTS) -c ThreeButtons_test_boost.cpp
 
 Game.o : ../Game.h
