@@ -5,11 +5,11 @@ PROG = ThreeButtons
 CC = g++
 CFLAGS = -Wall -g -std=c++11
 # For Linux Console
-# COMPILE_OPTS = -DLINUX_VM
+COMPILE_OPTS = -DLINUX_VM
 # For EVM Board version 1.0
 # COMPILE_OPTS = -DEVM_1_0
 # For EVM Board version 1.1
-COMPILE_OPTS = -DEVM_1_1
+# COMPILE_OPTS = -DEVM_1_1
 LDFLAGS =
 OBJS = ThreeButtons.o Game.o ConsoleDisplay.o
 
