@@ -5,14 +5,14 @@ PROG = ThreeButtons_test_boost
 CC = g++
 CFLAGS = -Wall -g -std=c++11
 # For Linux Console
-COMPILE_OPTS = -DTARGET_HW=LINUX_VM
+COMPILE_OPTS = -DLINUX_VM
 # For EVM Board version 1.0
-# COMPILE_OPTS = -DTARGET_HW=EVM_1_0
+# COMPILE_OPTS = -DEVM_1_0
 # For EVM Board version 1.1
-# COMPILE_OPTS = -DTARGET_HW=EVM_1_1
+# COMPILE_OPTS = -DEVM_1_1
 
 # for MacOSX
-LDFLAGS = -I /usr/local/opt/boost/include -L/usr/local/Cellar/boost/1.76.0/lib -lboost_unit_test_framework
+# LDFLAGS = -I /usr/local/opt/boost/include -L/usr/local/Cellar/boost/1.76.0/lib -lboost_unit_test_framework
 # for Linux
 # LDFLAGS =
 
