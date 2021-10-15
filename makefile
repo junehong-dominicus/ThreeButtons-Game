@@ -2,7 +2,7 @@
 # Variables to control Makefile operation
 
 PROG = ThreeButtons
-CC = g++
+CC = g++ # To do: Cross compiler support required
 CFLAGS = -Wall -g -std=c++11
 # For Linux Console
 COMPILE_OPTS = -DLINUX_VM
