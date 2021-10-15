@@ -32,3 +32,23 @@
 	// To do ...
 #endif
 ```
+
+* To do: Cross-Compile makefile
+
+```
+#Set Architecture
+ARCH := arm
+
+#Compilers
+ifeq ($(ARCH),arm)
+CC := /usr/local/arm/bin/arm-unknown-linux-gnueabi-g++
+GCC := /usr/local/arm/bin/arm-unknown-linux-gnueabi-gcc
+else
+CC := g++
+GCC := gcc
+endif
+```
+
+```
+make ARCH=x86              // Build Release version X86
+```
