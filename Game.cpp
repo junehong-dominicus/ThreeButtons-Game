@@ -8,7 +8,13 @@
 Game::Game()
 {
 	memset(m_led_colors, LED_OFF, num_of_buttons*sizeof(int));
+	m_console_display = new ConsoleDisplay();
 	generateRandomSequence();
+}
+
+void Game::printNewGameMessage()
+{
+	m_console_display->printNewGameMessage();
 }
 
 void Game::play()

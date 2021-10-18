@@ -4,13 +4,12 @@
 
 #include <string>
 
-class Game;
+// class Game;
 
 class ConsoleDisplay {
 public:
 	void printNewGameMessage();
 	void promptUserToGuess(char* user_guess);
-	void printWrongInputMessage();
 	void printWinMessage();
 	void printResult(int* led_colors);
 

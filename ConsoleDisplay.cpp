@@ -1,6 +1,6 @@
 #include <iostream>
-#include "ConsoleDisplay.h"
 #include "Game.h"
+#include "ConsoleDisplay.h"
 
 using namespace std;
 
