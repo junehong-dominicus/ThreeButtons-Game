@@ -38,7 +38,7 @@ private:
 	int m_led_colors[num_of_buttons] = { 0 };
 
   // To do: various number_of_buttons' value support
-	std::unordered_map<char, int> m_button_exists = {
+	std::unordered_map<char, int> m_button_exists = {  // To do: <char, bool>
 		{'A', false},
 		{'B', false},
 		{'C', false}
