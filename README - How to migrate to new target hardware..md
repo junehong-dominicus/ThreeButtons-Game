@@ -33,6 +33,8 @@
 #endif
 ```
 
+* To do: __Adapter Pattern__
+
 * To do: Cross-Compile makefile
 
 ```
