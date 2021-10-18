@@ -37,6 +37,7 @@ private:
 	int m_correct_guesses = 0;
 	int m_led_colors[num_of_buttons] = { 0 };
 
+  // To do: various number_of_buttons' value support
 	std::unordered_map<char, int> m_button_exists = {
 		{'A', false},
 		{'B', false},

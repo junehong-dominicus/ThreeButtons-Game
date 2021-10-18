@@ -56,6 +56,8 @@ test_suite* init_unit_test_suite( int /*argc*/, char* /*argv*/[] )
 
 using namespace std;
 
+// To do: various number_of_buttons' value support
+
 BOOST_AUTO_TEST_CASE( GameClass_test )
 {
   Game *m_game;

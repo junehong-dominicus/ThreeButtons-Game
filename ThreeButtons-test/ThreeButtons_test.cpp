@@ -9,6 +9,8 @@
 
 using namespace std;
 
+// To do: various number_of_buttons' value support
+
 int main() {
   char user_guess[num_of_buttons] = { '0' };
 	int correct_guesses = 0;

@@ -70,6 +70,7 @@ void Game::generateRandomSequence()
 // For test
 void Game::setSequence(char* buttons_sequence)
 {
+	// To do: various number_of_buttons' value support
 	m_button_exists['A'] = false;
 	m_button_exists['B'] = false;
 	m_button_exists['C'] = false;
