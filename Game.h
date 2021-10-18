@@ -33,7 +33,7 @@ private:
 	char m_user_guess[num_of_buttons];
 	bool m_user_wins = false;
 	int m_correct_guesses = 0;
-  int m_led_colors[num_of_buttons] = { 0 };
+  int m_led_colors[num_of_buttons] = { 0 }; // <= enum LED_Colors 
 
   // To do: various number_of_buttons' value support
   std::unordered_map<char, char> m_button_exists = {
